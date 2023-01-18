@@ -6,9 +6,9 @@ def printArr(dist):
 	for i in range(V):
 		print("{0}\t\t{1}".format(i, dist[i]))
 
-def BellmanFord(src):
+def BellmanFord(source):
 	dist = [float("Inf")] * V
-	dist[src] = 0
+	dist[source] = 0
 
 	for _ in range(V - 1):
 		for u, v, w in graph:
