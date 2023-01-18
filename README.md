@@ -24,4 +24,4 @@ SOLUTION:
 
 	So to solve this problem, we use Bellman-Ford Algorithm, which can work even in case of directed graphs and negative weights.
 	Bellman-Ford uses a bottom-up approach such that if the shortest path with i edges can be calculated, then the shortest path with i+1 edges can be calculated.
-	
+	So we are basically finding an edge from u to v d(u,v) such that d(s,u)+d(u,v)<d(s,v) and replace until the condition is not satisfied.
